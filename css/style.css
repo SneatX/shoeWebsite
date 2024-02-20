@@ -29,7 +29,7 @@ nav .container > div{
     align-items: center;
 }
 
-nav.menu, nav form, .footer, .footer .watch{
+nav .menu, nav form, .footer, .footer .watch{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -76,20 +76,21 @@ nav form input::placeholder{
 .nav-btn{
     background: rgba(255, 255, 255, 0.3);
     color: var(--color-primary);
-    height: 2.8em;
     width: 2.8em;
+    height: 2.8em;
     border-radius: 50%;
     border: none;
     outline: none;
     cursor: pointer;
     transition: 0.3s;
+    font-size: 1em;
 }
 
 .nav-btn:hover{
     background: rgba(255, 255, 255, 0.6);
 }
 
-nav .container .menu-btm{
+nav .container .menu-btn{
     display: none;
 }
 
@@ -102,7 +103,7 @@ header{
 }
 
 header::before{
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     right: -40em;
@@ -216,6 +217,42 @@ header::after{
     background: rgba(255, 255, 255, 0.5);
     box-shadow: 0px 0px 0px transparent;
 }
+
+@media screen and (max-width: 1000px){
+    nav .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    nav .container > div{
+        grid-template-columns: 1fr;
+    }
+
+    nav .menu{
+        flex-direction: column;
+        align-items: flex-start;
+        height: 0;
+        overflow: hidden;
+        transition: 0.7s;
+    }
+    nav ul li{
+        display: block;
+        margin: 0.5em 0;
+    }
+    nav ul li:nth-child(1){
+        margin-top: 1.5em;
+    }
+    nav .container .menu-btn{
+        display: inline-block;
+        font-size: 1.4em;
+        cursor: pointer;
+    }
+    nav .container .nav-toggle{
+        height: 16em;
+    }
+}
+
 @media screen and (max-width: 1210px){
     nav{
         margin-bottom: 2em;
@@ -245,42 +282,6 @@ header::after{
         margin: 2em auto 3em auto;
     }
 }
-
-@media screen and (max-width: 1000px){
-    nav .container{
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
-
-    nav .container > div{
-        grid-template-columns: 1fr;
-    }
-
-    nav .menu{
-        flex-direction: column;
-        align-items: flex-start;
-        height: 0;
-        overflow: hidden;
-        transition: 0.7s;
-    }
-    nav ul li{
-        display: block;
-        margin: 0.5em 0;
-    }
-    nav ul li:nth-child(1){
-        margin-top: 1.5em;
-    }
-    nav .container .menu-btn{
-        display: inline-block;
-        font-size: 1.4em;
-        cursor: pointer;
-    }
-    nav .container .nav-toggle{
-        height: 16em;
-    }
-}
-
 
 @media screen and (max-width: 800px){
     html{
