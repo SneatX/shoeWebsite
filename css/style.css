@@ -166,3 +166,22 @@ header::after{
     transition: 0.3s;
 }
 
+.btn:hover{
+    background: #6e9623;
+}
+
+.body > div:nth-child(2){
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.body .fas{
+    color: #fcc204;
+}
+
+.body img{
+    width: 45em;
+    transform: rotate(-25deg);
+    filter: drop-shadow(30px 45px 40px #161616);
+}
