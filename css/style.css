@@ -33,3 +33,69 @@ nav.menu, nav form, .footer, .footer .watch{
     justify-content: space-between;
     align-items: center;
 }
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    display: inline-block;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 0 0.5em;
+}
+
+nav ul a{
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+nav form{
+    margin-right: 2em;
+}
+
+nav form input{
+    background: transparent;
+    color: var(--color-primary);
+    width: 12em;
+    padding: 0.5em 1em;
+    border: none;
+    outline: none; 
+}
+
+nav form input::placeholder{
+    color: var(--color-primary);
+}
+
+.logo{
+    width: 4em;
+    display: inline-block;
+}
+
+.nav-btn{
+    background: rgba(255, 255, 255, 0.3);
+    color: var(--color-primary);
+    height: 2.8em;
+    width: 2.8em;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav-btn:hover{
+    background: rgba(255, 255, 255, 0.6);
+}
+
+nav .container .menu-btm{
+    display: none;
+}
+
+header{
+    height: 100vh;
+    background:  #090909;
+    position: relative;
+    overflow: hidden;
+    color: var(--color-primary);
+}
