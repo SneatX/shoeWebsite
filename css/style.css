@@ -282,3 +282,36 @@ header::after{
     }
 }
 
+@media screen and(max-width: 800px){
+    html{
+        font-size: 14px;
+    }
+
+    .body img{
+        width: 90%;
+    }
+
+    .footer{
+        flex-direction: column;
+        margin-top: 3em;
+    }
+
+    .watch{
+        margin: 2em 0;
+        flex-direction: column;
+    }
+
+    .footer .play-icon{
+        margin: 0;
+    }
+}
+
+@media screen and (max-height: 650px) {
+    header{
+        height: initial;
+    }
+    .footer{
+        margin: 4em auto 2em auto;
+    }
+}
+
